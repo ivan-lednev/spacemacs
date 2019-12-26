@@ -12,6 +12,19 @@
 ;; Without this comment emacs25 adds (package-initialize) here
 ;; (package-initialize)
 
+;; PERSONAL
+(setq org-startup-indented t)
+;; (setq org-agenda-files '("~/Dropbox/org/"))
+(with-eval-after-load 'org (setq org-agenda-files
+                                 '("~/Dropbox/org/")))
+;; END PERSONAL
+
+
+
+
+
+
+
 ;; Avoid garbage collection during startup.
 ;; see `SPC h . dotspacemacs-gc-cons' for more info
 (defconst emacs-start-time (current-time))
